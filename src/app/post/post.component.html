@@ -1,0 +1,7 @@
+<article>
+  {{imageUrl | json}}
+  <div *ngIf="(imageUrl | json) != 'null'">
+    <img src="{{imageUrl}}" height="200" width="200">
+  </div>
+  <p>{{content}}</p>
+</article>  
